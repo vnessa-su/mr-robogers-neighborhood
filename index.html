@@ -7,6 +7,8 @@
 
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans&display=swap" rel="stylesheet">
 
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
@@ -15,22 +17,22 @@
   <link rel="icon" href="img/favicon.ico">
 </head>
 <body class="page-background">
-  <h1 class="text-center mt-3">Mr. Roboger's Neighborhood</h1>
+  <h1 class="text-center mt-3 abel-font">Mr. Roboger's Neighborhood</h1>
   <div class="container rounded main-container p-4">
     <form id="userInputForm">
       <div class="form-group">
-        <label for="nameInput" >Name:</label>
-        <input type="text" id="nameInput" class="form-control form-input" placeholder="(Optional)">
+        <label for="nameInput" class="abel-font">Name:</label>
+        <input type="text" id="nameInput" class="form-control form-input open-sans-font" placeholder="(Optional)">
       </div>
       <div class="form-group">
-        <label for="numberInput">Number or numbers separated by a space or comma:</label>
-        <input type="text" id="numberInput" class="form-control form-input" placeholder="e.g.(13,-5,23 or 13 -5 23)">
+        <label for="numberInput" class="abel-font">Number or numbers separated by a space or comma:</label>
+        <input type="text" id="numberInput" class="form-control form-input open-sans-font" placeholder="e.g.(13,-5,23 or 13 -5 23)">
       </div>
       <div class="form-check mb-2">
         <input class="form-check-input" type="checkbox" value="" id="reverseOrderCheckbox">
-        <label class="form-check-label" for="reverseOrderCheckbox">Reverse Order</label>
+        <label class="form-check-label abel-font" for="reverseOrderCheckbox">Reverse Order</label>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary abel-font">Submit</button>
     </form>
     <hr>
     <div id="resultsDisplay" class="container display-container"></div>
