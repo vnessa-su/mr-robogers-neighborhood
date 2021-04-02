@@ -1,4 +1,4 @@
-# _{Application Name}_
+# Mr. Roboger's Neighborhood
 
 #### _{Brief description of application}, {Date of current version}_
 
@@ -52,4 +52,6 @@ _For any questions or comments, please reach out through GitHub._
 
 [MIT License](license)
 
-Copyright (c) [year] [names]
+Copyright (c) 2021 Vanessa Su
+
+## Tests
