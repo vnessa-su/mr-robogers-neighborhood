@@ -26,7 +26,6 @@ function numberToProcessedArray(number, name){
       processedArray.push(currentNumber);
     }
   }
-  console.log(processedArray);
   return processedArray;
 }
 
@@ -46,7 +45,6 @@ function removeInvalidNumbers(stringArray){
       validNumbersArray.push(number);
     }
   });
-  console.log(validNumbersArray);
   return validNumbersArray;
 }
 
@@ -58,11 +56,10 @@ $(document).ready(function(){
     const numberInput = $("input#numberInput").val().split(/[\s,]/);
     const nameInput = $("input#nameInput").val().trim();
     const reversedOrderSelected = $("input#reverseOrderCheckbox").prop("checked");
-    console.log(numberInput);
-    console.log(nameInput);
-    console.log(reversedOrderSelected);
+
     const validNumberInputs = removeInvalidNumbers(numberInput);
     $("#resultsDisplay").empty();
+
     validNumberInputs.forEach(function(element){
       const outputStringArray = numberToProcessedArray(element, nameInput);
       if(reversedOrderSelected){
