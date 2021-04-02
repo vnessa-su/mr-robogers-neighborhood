@@ -1,44 +1,50 @@
 # Mr. Roboger's Neighborhood
 
-#### _{Brief description of application}, {Date of current version}_
+#### A webpage that prompts the user to enter in a number or numbers, and then an array is displayed per number with numbers containing 1, 2, or 3 replaced with strings.
 
-#### By _**{List of contributors}***_
+#### By Vanessa Su
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+Epicodus Intro Week 3 Project
 
-#### To see my live website go to {GH_PAGES_LINK_HERE}!
+This webpage asks the user to input a number or set of numbers separated by a space or comma. There is also an input section for a name and an checkbox to reverse the array order, both of which are optional. Then an array of numbers per number, ranging from 0 to the input number except for that numbers containing the digit 1, 2, or 3 are replaced by strings according to the following rules, in order of priority:
+1. If the number contains a 3, replace it with "Won't you be my neighbor?" or "Won't you be my neighbor, {name}?" if a name was submitted
+2. If the number contains a 2, replace it with "Boop!"
+3. If the number contains a 1, replace it with "Beep!"
+
+If the Reverse Order checkbox is selected, the numbers or associated string will be ordered from high to low, otherwise they will be ordered from low to high.
+
+#### To see my live website go to [https://vnessa-su.github.io/mr-robogers-neighborhood/](https://vnessa-su.github.io/mr-robogers-neighborhood/)!
 
 ## User Story
 
-* _As a user I want to be able to..._
+* Optionally enter a name
+* Enter in a number or set of numbers
+* Optionally select the Reverse Order checkbox
+* Press the Submit button
+* See results for all valid number inputs under the form
+* Repeat the process without reloading the page
 
 ## Technologies Used
 
-* _HTML_
-* _CSS_
-* _JavaScript_
-* _VSCode_
+* HTML
+* CSS
+* JavaScript
+* VSCode
 
 ## Setup/Installation Requirements
 
-Software Requirements
-1. Internet browser
-2. A code editor like VSCode or Atom to view or edit the codebase.
+Software Requirements:
+* Web browser
+* Code/text editor
 
-Open by downloading:
-1. Download this repository onto your computer by clicking the 'clone or download button'
-2. Open the project folder.
-2. Double click index.html to open it in your web browser
-
-Open via Bash/GitBash:
-1. Clone this repository onto your computer:
-`git clone {PUT_REPO_HERE}`
-2. Navigate into the `{NAME_OF_DIRECTORY}` directory, and open in Visual Studio Code or preferred text editor
-`code .`
-3. Open index.html in Chrome or preferred browser
-
+View/edit webpage locally:
+1. Download or clone this repository to your computer
+    * To download, click the Code button and select Download ZIP
+    * To clone, use: `git clone https://github.com/vnessa-su/mr-robogers-neighborhood.git`
+2. Navigate to the `/mr-robogers-neighborhood` directory
+3. Double click index.html to open it in your web browser or open in your code editor to modify
 
 ## Known Bugs
 
@@ -46,7 +52,7 @@ _No known bugs_
 
 ## Contact Information
 
-_For any questions or comments, please reach out through GitHub._
+For any questions or comments, please reach out through GitHub.
 
 ## License
 
@@ -120,7 +126,7 @@ Copyright (c) 2021 Vanessa Su
 
 ### **Test:** "It will return an array of numbers only if non-numeric strings are in the input."
 ### **Code:** 
-    const inputArray = ["4", "6", "banana", "13", "-5"];
+    const inputArray = ["4", "6", "banana", "13", "-5", "",];
     removeInvalidNumbers(inputArray);
 ### **Expected Output:** [4, 6, 13, -5]
 &nbsp;
@@ -128,6 +134,6 @@ Copyright (c) 2021 Vanessa Su
 ### **Test:** "It will return an array of numbers and float elements will be truncated down to integers."
 ### **Code:** 
     const inputArray = ["4", "6", "27.8", "13", "-5"];
-    removeInvalidNumbers(inputArray);v
+    removeInvalidNumbers(inputArray);
 ### **Expected Output:** [4, 6, 27, 13, -5]
 &nbsp;
