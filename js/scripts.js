@@ -64,9 +64,9 @@ $(document).ready(function(){
       const outputStringArray = numberToProcessedArray(element, nameInput);
       if(reversedOrderSelected){
         let reversedArray = reverseArrayOrder(outputStringArray);
-        $("#resultsDisplay").append(`<p><strong>${element}</strong>: ${reversedArray.join(", ")}</p>`);
+        $("#resultsDisplay").append(`<p class="open-sans-font"><span class="abel-font">${element}:</span> ${reversedArray.join(", ")}</p>`);
       } else {
-        $("#resultsDisplay").append(`<p><strong>${element}</strong>: ${outputStringArray.join(", ")}</p>`);
+        $("#resultsDisplay").append(`<p class="open-sans-font"><span class="abel-font">${element}:</span> ${outputStringArray.join(", ")}</p>`);
       }
     });
   });
