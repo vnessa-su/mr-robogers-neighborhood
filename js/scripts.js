@@ -30,6 +30,13 @@ function numberToProcessedArray(number, name){
   return processedArray;
 }
 
+function reverseArrayOrder(array){
+  let reversedArray = [];
+  array.forEach(function(element){
+    reversedArray.unshift(element);
+  });
+  return reversedArray;
+}
 // User Interface Logic
 $(document).ready(function(){
   $("#userInputForm").submit(function(event){
