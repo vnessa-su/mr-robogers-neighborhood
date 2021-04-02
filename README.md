@@ -95,3 +95,21 @@ Copyright (c) 2021 Vanessa Su
     numberToProcessedArray(inputNumber, inputName);
 #### **Expected Output:** [0, "Beep!", "Boop!", "Won't you be my neighbor, Vanessa?", 4]
 &nbsp;
+
+***
+### **Describe:** reverseArrayOrder()
+***
+
+#### **Test:** "It will return the same array if the input only has one element in it."
+#### **Code:** 
+    const inputArray = [0];
+    numberToProcessedArray(inputNumber);
+#### **Expected Output:** [0]
+&nbsp;
+
+#### **Test:** "It will return a multi-element array that is in the reverse order of the multi-element input array."
+#### **Code:** 
+    const inputArray = [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4];
+    reverseArrayOrder(inputArray);
+#### **Expected Output:** [4, "Won't you be my neighbor?", "Boop!", "Beep!", 0]
+&nbsp;
