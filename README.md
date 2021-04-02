@@ -113,3 +113,21 @@ Copyright (c) 2021 Vanessa Su
     reverseArrayOrder(inputArray);
 ### **Expected Output:** [4, "Won't you be my neighbor?", "Boop!", "Beep!", 0]
 &nbsp;
+
+***
+### **Describe:** removeInvalidNumbers()
+***
+
+### **Test:** "It will return an array of numbers only if non-numeric strings are in the input."
+### **Code:** 
+    const inputArray = ["4", "6", "banana", "13", "-5"];
+    removeInvalidNumbers(inputNumber);
+### **Expected Output:** [4, 6, 13, -5]
+&nbsp;
+
+### **Test:** "It will return an array of numbers with floats truncated down to integers."
+### **Code:** 
+    const inputArray = ["4", "6", "27.8", "13", "-5"];
+    removeInvalidNumbers(inputNumber);v
+### **Expected Output:** [4, 6, 27, 13, -5]
+&nbsp;

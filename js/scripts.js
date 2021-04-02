@@ -37,17 +37,31 @@ function reverseArrayOrder(array){
   });
   return reversedArray;
 }
+
+function removeInvalidNumbers(stringArray){
+  const validNumbersArray = [];
+  stringArray.forEach(function(element){
+    let number = parseInt(element);
+    if(number){
+      validNumbersArray.push(number);
+    }
+  });
+  console.log(validNumbersArray);
+  return validNumbersArray;
+}
+
 // User Interface Logic
 $(document).ready(function(){
   $("#userInputForm").submit(function(event){
     event.preventDefault();
 
-    const numberInput = parseInt($("input#numberInput").val(), 10);
+    const numberInput = $("input#numberInput").val().split(/[\s,]/);
     const nameInput = $("input#nameInput").val().trim();
     const reversedOrderSelected = $("input#reverseOrderCheckbox").prop("checked");
     console.log(numberInput);
     console.log(nameInput);
     console.log(reversedOrderSelected);
+    const validNumberInputs = removeInvalidNumbers(numberInput);
     const outputStringArray = numberToProcessedArray(numberInput, nameInput);
     if(reversedOrderSelected){
       let reversedArray = reverseArrayOrder(outputStringArray);
