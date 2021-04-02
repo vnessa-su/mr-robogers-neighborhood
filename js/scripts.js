@@ -49,6 +49,11 @@ $(document).ready(function(){
     console.log(nameInput);
     console.log(reversedOrderSelected);
     const outputStringArray = numberToProcessedArray(numberInput, nameInput);
-    $("#resultsDisplay").text(outputStringArray);
+    if(reversedOrderSelected){
+      let reversedArray = reverseArrayOrder(outputStringArray);
+      $("#resultsDisplay").text(reversedArray);
+    } else {
+      $("#resultsDisplay").text(outputStringArray);
+    }
   });
 });
