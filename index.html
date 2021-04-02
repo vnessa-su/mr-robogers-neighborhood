@@ -7,7 +7,6 @@
 
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
@@ -16,21 +15,25 @@
   <link rel="icon" href="img/favicon.ico">
 </head>
 <body class="page-background">
-  <form id="userInputForm">
-    <div class="form-group">
-      <label for="nameInput">Name:</label>
-      <input type="text" id="nameInput" class="form-control">
-    </div>
-    <div class="form-group">
-      <label for="numberInput">Enter in a number:</label>
-      <input type="text" id="numberInput" class="form-control">
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="reverseOrderCheckbox">
-      <label class="form-check-label" for="reverseOrderCheckbox">Reverse Order</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-  <div id="resultsDisplay"></div>
+  <h1 class="text-center mt-3">Mr. Roboger's Neighborhood</h1>
+  <div class="container rounded main-container p-4">
+    <form id="userInputForm">
+      <div class="form-group">
+        <label for="nameInput" >Name:</label>
+        <input type="text" id="nameInput" class="form-control form-input" placeholder="(Optional)">
+      </div>
+      <div class="form-group">
+        <label for="numberInput">Number or numbers separated by a space or comma:</label>
+        <input type="text" id="numberInput" class="form-control form-input" placeholder="e.g.(13,-5,23 or 13 -5 23)">
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" value="" id="reverseOrderCheckbox">
+        <label class="form-check-label" for="reverseOrderCheckbox">Reverse Order</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <hr>
+    <div id="resultsDisplay" class="container display-container"></div>
+  </div>
 </body>
 </html>

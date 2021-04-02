@@ -2,3 +2,15 @@
   background-image: url('../img/mini-town-david-mcbee.jpg');
   height: 100vh;
 }
+
+.form-input {
+  max-width: 600px;
+}
+
+.display-container {
+  min-height: 200px;
+}
+
+.main-container {
+  background-color: rgba(255, 255, 255, 0.8);
+}
