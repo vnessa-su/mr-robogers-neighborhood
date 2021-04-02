@@ -62,12 +62,15 @@ $(document).ready(function(){
     console.log(nameInput);
     console.log(reversedOrderSelected);
     const validNumberInputs = removeInvalidNumbers(numberInput);
-    const outputStringArray = numberToProcessedArray(numberInput, nameInput);
-    if(reversedOrderSelected){
-      let reversedArray = reverseArrayOrder(outputStringArray);
-      $("#resultsDisplay").text(reversedArray);
-    } else {
-      $("#resultsDisplay").text(outputStringArray);
-    }
+    $("#resultsDisplay").empty();
+    validNumberInputs.forEach(function(element){
+      const outputStringArray = numberToProcessedArray(element, nameInput);
+      if(reversedOrderSelected){
+        let reversedArray = reverseArrayOrder(outputStringArray);
+        $("#resultsDisplay").append(`<p><strong>${element}</strong>: ${reversedArray.join(", ")}</p>`);
+      } else {
+        $("#resultsDisplay").append(`<p><strong>${element}</strong>: ${outputStringArray.join(", ")}</p>`);
+      }
+    });
   });
 });
