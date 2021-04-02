@@ -42,7 +42,7 @@ function removeInvalidNumbers(stringArray){
   const validNumbersArray = [];
   stringArray.forEach(function(element){
     let number = parseInt(element);
-    if(number){
+    if(number || number === 0){
       validNumbersArray.push(number);
     }
   });
