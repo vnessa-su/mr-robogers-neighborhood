@@ -59,27 +59,39 @@ Copyright (c) 2021 Vanessa Su
 ***
 ### **Describe:** numberToProcessedArray()
 ***
-#### **Test:** "It will return an array with only 0 in it if the input is 0."
+
+#### **Test:** "It will return an array with only 0 in it if the input number is 0."
 #### **Code:** 
-    const input = 0;
-    numberToProcessedArray(input);
+    const inputNumber = 0;
+    numberToProcessedArray(inputNumber);
 #### **Expected Output:** [0]
 &nbsp;
-#### **Test:** "It will return an array that contains the numbers 0 to 4, if the input is 4, with numbers 1, 2, 3 in the array replaced by strings according to the outlined rules."
+
+#### **Test:** "It will return an array that contains the numbers 0 to 4, if the input number is 4, with numbers 1, 2, 3 in the array replaced by strings according to the outlined rules."
 #### **Code:** 
-    const input = 4;
-    numberToProcessedArray(input);
+    const inputNumber = 4;
+    numberToProcessedArray(inputNumber);
 #### **Expected Output:** [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4]
 &nbsp;
-#### **Test:** "It will return an array that contains the numbers 0 to 23, with numbers containing the digits 1, 2, or 3 in the array replaced by strings according to the outlined rules."
+
+#### **Test:** "It will return an array that contains the numbers 0 to 23, if the input number is 23, with numbers containing the digits 1, 2, or 3 in the array replaced by strings according to the outlined rules."
 #### **Code:** 
-    const input = 23;
-    numberToProcessedArray(input);
+    const inputNumber = 23;
+    numberToProcessedArray(inputNumber);
 #### **Expected Output:** [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Beep!", "Boop!", "Boop!", "Boop!", "Won't you be my neighbor?"]
 &nbsp;
-#### **Test:** "It will return an array the contains the number -4 to 0 if the input is -4."
+
+#### **Test:** "It will return an array the contains the numbers -4 to 0, if the input number is -4, with numbers containing the digits 1, 2, or 3 in the array replaced by strings according to the outlined rules."
 #### **Code:** 
-    const input = -4;
-    numberToProcessedArray(input);
+    const inputNumber = -4;
+    numberToProcessedArray(inputNumber);
 #### **Expected Output:** [-4, "Won't you be my neighbor?", "Boop!", "Beep!"]
+&nbsp;
+
+#### **Test:** "If a name is input, it will include the name in the number 3 string replacement."
+#### **Code:** 
+    const inputNumber = 4;
+    const inputName = "Vanessa";
+    numberToProcessedArray(inputNumber, inputName);
+#### **Expected Output:** [0, "Beep!", "Boop!", "Won't you be my neighbor, Vanessa?", 4]
 &nbsp;
