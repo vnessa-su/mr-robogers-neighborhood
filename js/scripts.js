@@ -1,6 +1,8 @@
 // Business Logic
 function numberToProcessedArray(number){
-  return number;
+  let processedArray = [0];
+  console.log(processedArray);
+  return processedArray;
 }
 
 // User Interface Logic
